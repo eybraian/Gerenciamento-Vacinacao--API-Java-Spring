@@ -2,4 +2,9 @@ package com.dosecerta.controller;
 
 public class VacinaController {
     
+    //CONSULTAR TODAS AS VACINAS
+
+    //CONSULTAR TODAS AS VACINAS PARA UMA DETERMINADA FAIXA ETARIA
+
+    //CONSULTAR TODAS AS VACINAS RECOMENDADAS ACIMA DE UMA IDADE
 }

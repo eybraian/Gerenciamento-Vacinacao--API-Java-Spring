@@ -2,4 +2,11 @@ package com.dosecerta.controller;
 
 public class EstatisticaController {
     
+    //QTE DE VACINAS APLICADAS POR PACIENTE
+
+    //QTE DE VACINAS APLICAVEIS NO PROXIMO MES POR PACIENTE
+
+    //QTE DE VACINAS ATRASADAS
+
+    //QTE DE VACINAS ACIMA DE UMA DETERMINADA IDADE
 }
