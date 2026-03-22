@@ -3,17 +3,24 @@ package com.dosecerta.model;
 public class VacinaModel {
     
     //DECLARAR
+    public enum PublicoAlvo{
+        CRIANÇA,
+        ADOLESCENTE,
+        ADULTO,
+        GESTANTE
+    }
     private Integer id_vacina;
     private String nome_vacina;
     private String descricao_vacina;
     private Integer limite_aplicacao;
-    private String publico_alvo;
+    private PublicoAlvo publico_alvo;
+    //private String publico_alvo;
 
     //METODO CONSTRUTOR DE VACINA
     public VacinaModel(){}
 
     public VacinaModel(Integer id_vacina, String nome_vacina, String descricao_vacina, Integer limite_aplicacao,
-            String publico_alvo) {
+            PublicoAlvo publico_alvo) {
         this.id_vacina = id_vacina;
         this.nome_vacina = nome_vacina;
         this.descricao_vacina = descricao_vacina;
@@ -55,11 +62,11 @@ public class VacinaModel {
         this.limite_aplicacao = limite_aplicacao;
     }
 
-    public String getPublico_alvo() {
+    public PublicoAlvo getPublico_alvo() {
         return publico_alvo;
     }
 
-    public void setPublico_alvo(String publico_alvo) {
+    public void setPublico_alvo(PublicoAlvo publico_alvo) {
         this.publico_alvo = publico_alvo;
     }
 

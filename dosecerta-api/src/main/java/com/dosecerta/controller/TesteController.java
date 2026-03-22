@@ -1,3 +1,5 @@
+//ARQUIVO TESTA SE O BANCO ESTÁ FUNCIONAL
+
 package com.dosecerta.controller;
 
 import java.sql.Connection;

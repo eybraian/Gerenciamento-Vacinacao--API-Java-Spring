@@ -32,7 +32,7 @@ public class PacienteDAO {
 
             stmt.setString(1, p.getNome_paciente());
             stmt.setString(2, p.getCpf_paciente());
-            stmt.setString(3, p.getSexo());
+            stmt.setString(3, p.getSexo().toString());
             stmt.setDate(4, Date.valueOf(p.getData_nascimento()));
 
             stmt.executeUpdate();
@@ -58,7 +58,7 @@ public class PacienteDAO {
                         rs.getInt("id_paciente"),
                         rs.getString("nome_paciente"),
                         rs.getString("cpf_paciente"),
-                        rs.getString("sexo"),
+                        PacienteModel.Sexo.valueOf(rs.getString("sexo")),
                         rs.getDate("data_nascimento").toLocalDate()
                 ));
             }
@@ -80,7 +80,7 @@ public class PacienteDAO {
                         rs.getInt("id_paciente"),
                         rs.getString("nome_paciente"),
                         rs.getString("cpf_paciente"),
-                        rs.getString("sexo"),
+                        PacienteModel.Sexo.valueOf(rs.getString("sexo")),
                         rs.getDate("data_nascimento").toLocalDate()
                 );
                 lista.add(p);
@@ -98,7 +98,7 @@ public class PacienteDAO {
 
             stmt.setString(1, p.getNome_paciente());
             stmt.setString(2, p.getCpf_paciente());
-            stmt.setString(3, p.getSexo());
+            stmt.setString(3, p.getSexo().toString());
             stmt.setDate(4, Date.valueOf(p.getData_nascimento()));
             stmt.setInt(5, id);
 

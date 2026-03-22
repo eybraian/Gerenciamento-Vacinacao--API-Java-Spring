@@ -5,17 +5,29 @@ import java.time.LocalDate;
 public class PacienteModel {
 
     //DECLARAR
+    public enum Sexo {
+        M, 
+        F;
+    }
     private Integer id_paciente;
     private String nome_paciente;
     private String cpf_paciente;
-    private String sexo;
+    //private String sexo;
+    private Sexo sexo;
     private LocalDate data_nascimento;
     
 
     //CONSTRUTOR DO PACIENTE
     public PacienteModel() {}
 
-    public PacienteModel(Integer id_paciente, String nome_paciente, String cpf_paciente, String sexo,
+    public PacienteModel(Integer id_paciente, String nome_paciente, Sexo sexo, LocalDate data_nascimento) {
+        this.id_paciente = id_paciente;
+        this.nome_paciente = nome_paciente;
+        this.sexo = sexo;
+        this.data_nascimento = data_nascimento;
+    }
+
+    public PacienteModel(Integer id_paciente, String nome_paciente, String cpf_paciente, Sexo sexo,
             LocalDate data_nascimento) {
         this.id_paciente = id_paciente;
         this.nome_paciente = nome_paciente;
@@ -49,11 +61,11 @@ public class PacienteModel {
         this.cpf_paciente = cpf_paciente;
     }
 
-    public String getSexo() {
+    public Sexo getSexo() {
         return sexo;
     }
 
-    public void setSexo(String sexo) {
+    public void setSexo(Sexo sexo) {
         this.sexo = sexo;
     }
 
