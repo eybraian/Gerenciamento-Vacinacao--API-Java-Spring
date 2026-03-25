@@ -318,5 +318,4 @@ GET /estatisticas/imunizacoes_atrasadas/paciente/12
 Projeto desenvolvido em contexto de desafio acadêmico.
 Uso educacional.
 
-```
 
